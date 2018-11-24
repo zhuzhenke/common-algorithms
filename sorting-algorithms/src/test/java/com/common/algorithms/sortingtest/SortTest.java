@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author zhuzhenke
  * @date 2018/11/24
  */
-public class InsertionSortTest {
+public class SortTest {
 
     @Test
     public void testCorrectUtils() {
@@ -23,13 +23,23 @@ public class InsertionSortTest {
 
     @Test
     public void testInsertionSort() {
-        Sort sort = new InsertionSort();
+        sort(new InsertionSort());
+
+    }
+
+    @Test
+    public void testMergeSort() {
+        sort(new MergeSort());
+    }
+
+
+    private void sort(Sort sort) {
         for (int[] sortingData : SortingTestSampleData.sortingData) {
             int[] sortedResultData = sort.sort(sortingData);
             boolean soringResult = SortUtils.sortedArray(sortedResultData, SortingTestSampleData.sortedStandardData, true);
             if (!soringResult) {
                 System.out.println("sortingData:" + SortUtils.printArray(sortingData, false) +
-                        ",sortedResultData" + SortUtils.printArray(sortedResultData, false));
+                        ",sortedResultData:" + SortUtils.printArray(sortedResultData, false));
             }
             Assert.assertEquals(soringResult, true);
         }
