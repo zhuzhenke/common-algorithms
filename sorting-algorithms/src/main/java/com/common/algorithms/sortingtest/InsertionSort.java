@@ -4,8 +4,9 @@ import com.common.algorithms.basic.Sort;
 import com.common.algorithms.basic.SortUtils;
 
 /**
- * document:https://en.wikipedia.org/wiki/Insertion_sort
+ * documentation:https://en.wikipedia.org/wiki/Insertion_sort
  * gif demo:https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif
+ * worst-case performance:О(n2)
  *
  * @author zhuzhenke
  * @date 2018/11/24

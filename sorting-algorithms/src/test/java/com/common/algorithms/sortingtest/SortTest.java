@@ -32,13 +32,20 @@ public class SortTest {
         sort(new MergeSort());
     }
 
+    @Test
+    public void testSelectionSort() {
+        sort(new SelectionSort());
+    }
+
 
     private void sort(Sort sort) {
-        for (int[] sortingData : SortingTestSampleData.sortingData) {
+
+        for (int i = 0; i < SortingTestSampleData.sortingData.length; i++) {
+            int[] sortingData = SortingTestSampleData.sortingData[i];
             int[] sortedResultData = sort.sort(sortingData);
             boolean soringResult = SortUtils.sortedArray(sortedResultData, SortingTestSampleData.sortedStandardData, true);
             if (!soringResult) {
-                System.out.println("sortingData:" + SortUtils.printArray(sortingData, false) +
+                System.out.println("i:" + i +
                         ",sortedResultData:" + SortUtils.printArray(sortedResultData, false));
             }
             Assert.assertEquals(soringResult, true);
