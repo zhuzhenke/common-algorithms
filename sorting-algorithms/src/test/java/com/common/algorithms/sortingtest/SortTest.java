@@ -37,6 +37,11 @@ public class SortTest {
         sort(new SelectionSort());
     }
 
+    @Test
+    public void testBubbleSort() {
+        sort(new BubbleSort());
+    }
+
 
     private void sort(Sort sort) {
 
