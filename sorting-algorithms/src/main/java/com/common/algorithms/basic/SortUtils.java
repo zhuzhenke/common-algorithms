@@ -46,4 +46,17 @@ public class SortUtils {
         }
         return resultStr;
     }
+
+    public static void swap(int[] swapArray, int i, int j) {
+        check(swapArray);
+        if (i < 0 || i > swapArray.length - 1) {
+            throw new ArrayIndexOutOfBoundsException("illegal index i:" + i);
+        }
+        if (j < 0 || j > swapArray.length - 1) {
+            throw new ArrayIndexOutOfBoundsException("illegal index j:" + j);
+        }
+        int temp = swapArray[i];
+        swapArray[i] = swapArray[j];
+        swapArray[j] = temp;
+    }
 }

@@ -42,6 +42,11 @@ public class SortTest {
         sort(new BubbleSort());
     }
 
+    @Test
+    public void testQuickSort() {
+        sort(new QuickSort());
+    }
+
 
     private void sort(Sort sort) {
 
