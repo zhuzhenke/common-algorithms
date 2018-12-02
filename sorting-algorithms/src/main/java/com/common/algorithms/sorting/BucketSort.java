@@ -16,10 +16,13 @@ public class BucketSort implements Sort {
         int bucketSize = (int) Math.round(Math.sqrt(sortingData.length)) + 1;
         int[][] buckets = new int[bucketSize][];
         int max = SortUtils.getMaxValue(sortingData);
-        double avgContain = Math.ceil((double)max / (double)bucketSize);
+        double avgContain = Math.ceil((double) max / (double) bucketSize);
 
         for (int value : sortingData) {
             int bucketIndex = (int) Math.ceil(value / avgContain) - 1;
+            if (bucketIndex < 0) {
+                bucketIndex = 0;
+            }
             int[] bucketIndexs = buckets[bucketIndex];
             if (bucketIndexs == null || bucketIndexs.length == 0) {
                 bucketIndexs = new int[1];
