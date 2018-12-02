@@ -6,6 +6,8 @@ import com.common.algorithms.basic.SortingTestSampleData;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.PriorityQueue;
+
 /**
  * @author zhuzhenke
  * @date 2018/11/24
@@ -52,6 +54,11 @@ public class SortTest {
         sort(new HeapSort());
     }
 
+    @Test
+    public void testCountingSort() {
+        sort(new CountingSort());
+    }
+
     private void sort(Sort sort) {
 
         for (int i = 0; i < SortingTestSampleData.sortingData.length; i++) {
@@ -59,7 +66,18 @@ public class SortTest {
             int[] sortedResultData = sort.sort(sortingData);
             boolean soringResult = SortUtils.sortedArray(sortedResultData, SortingTestSampleData.sortedStandardData, true);
             if (!soringResult) {
-                System.out.println("i:" + i +
+                System.out.println("sortingData:i:" + i +
+                        ",sortedResultData:" + SortUtils.printArray(sortedResultData, false));
+            }
+            Assert.assertEquals(soringResult, true);
+        }
+
+        for (int i = 0; i < SortingTestSampleData.hasEqualSortingData.length; i++) {
+            int[] sortingData = SortingTestSampleData.hasEqualSortingData[i];
+            int[] sortedResultData = sort.sort(sortingData);
+            boolean soringResult = SortUtils.sortedArray(sortedResultData, SortingTestSampleData.hasEqualSortedStandardData, true);
+            if (!soringResult) {
+                System.out.println("hasEqualSortingData:i:" + i +
                         ",sortedResultData:" + SortUtils.printArray(sortedResultData, false));
             }
             Assert.assertEquals(soringResult, true);

@@ -24,4 +24,25 @@ public class SortingTestSampleData {
     public static int[][] sortingData = new int[][]{
             sortedStandardData, sortingData2, sortingData3, sortingData4
     };
+
+
+    public static int[] hasEqualSortedStandardData = new int[]{
+            1, 3, 3, 4, 4, 6, 7, 8, 8, 10
+    };
+    private static int[] hasEqualSortingData1 = new int[]{
+            10, 4, 6, 8, 4, 7, 8, 3, 1, 3
+    };
+    private static int[] hasEqualSortingData2 = new int[]{
+            4, 8, 4, 6, 1, 3, 10, 7, 8, 3
+    };
+    private static int[] hasEqualSortingData3 = new int[]{
+            3, 4, 4, 6, 1, 10, 8, 3, 8, 7
+    };
+    private static int[] hasEqualSortingData4 = new int[]{
+            10, 8, 8, 7, 6, 4, 4, 3, 3, 1
+    };
+
+    public static int[][] hasEqualSortingData = new int[][]{
+            hasEqualSortingData1, hasEqualSortingData2, hasEqualSortingData3, hasEqualSortingData4
+    };
 }
