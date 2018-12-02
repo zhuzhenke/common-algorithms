@@ -1,4 +1,4 @@
-package com.common.algorithms.sortingtest;
+package com.common.algorithms.sorting;
 
 import com.common.algorithms.basic.Sort;
 import com.common.algorithms.basic.SortUtils;

@@ -1,4 +1,4 @@
-package com.common.algorithms.sortingtest;
+package com.common.algorithms.sorting;
 
 import com.common.algorithms.array.FindMaxSubArray;
 import com.common.algorithms.array.MaxSubArrayRecord;

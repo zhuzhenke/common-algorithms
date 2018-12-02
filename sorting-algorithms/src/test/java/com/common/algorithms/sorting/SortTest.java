@@ -1,4 +1,4 @@
-package com.common.algorithms.sortingtest;
+package com.common.algorithms.sorting;
 
 import com.common.algorithms.basic.Sort;
 import com.common.algorithms.basic.SortUtils;
@@ -47,6 +47,10 @@ public class SortTest {
         sort(new QuickSort());
     }
 
+    @Test
+    public void testHeapSort() {
+        sort(new HeapSort());
+    }
 
     private void sort(Sort sort) {
 
