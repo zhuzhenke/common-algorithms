@@ -59,4 +59,19 @@ public class SortUtils {
         swapArray[i] = swapArray[j];
         swapArray[j] = temp;
     }
+
+    public static int getMaxValue(int[] sortingData) {
+        check(sortingData);
+
+        int max = sortingData[0];
+        for (int value : sortingData) {
+            if (value < 0) {
+                throw new IllegalArgumentException("value could not be negative:" + value);
+            }
+            if (value > max) {
+                max = value;
+            }
+        }
+        return max;
+    }
 }

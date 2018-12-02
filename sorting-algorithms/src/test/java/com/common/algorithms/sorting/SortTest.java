@@ -59,6 +59,11 @@ public class SortTest {
         sort(new CountingSort());
     }
 
+    @Test
+    public void testBucketSort() {
+        sort(new BucketSort());
+    }
+
     private void sort(Sort sort) {
 
         for (int i = 0; i < SortingTestSampleData.sortingData.length; i++) {
@@ -82,5 +87,15 @@ public class SortTest {
             }
             Assert.assertEquals(soringResult, true);
         }
+    }
+
+    @Test
+    public void testMathFloor() {
+        System.out.println("Math.floor(4.2d):" + Math.floor(4.2d));//4.0
+        System.out.println("Math.floor(4.7d):" + Math.floor(4.7d));//4.0
+        System.out.println("Math.ceil(4.2d):" + Math.ceil(4.2d));//5.0
+        System.out.println("Math.ceil(4.7d):" + Math.ceil(4.7d));//5.0
+        System.out.println("Math.round(4.2d):" + Math.round(4.2d));//4
+        System.out.println("Math.round(4.7d):" + Math.round(4.7d));//5
     }
 }

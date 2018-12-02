@@ -20,7 +20,7 @@ public class CountingSort implements Sort {
     }
 
     private int[] sort1(int[] sortingData) {
-        int maxValue = getMaxValue(sortingData);
+        int maxValue = SortUtils.getMaxValue(sortingData);
         //get max,check all numbers must be bigger or equal 0
         int[] count = new int[maxValue + 1];
         //count every number
@@ -40,7 +40,7 @@ public class CountingSort implements Sort {
     }
 
     private int[] sort2(int[] sortingData) {
-        int maxValue = getMaxValue(sortingData);
+        int maxValue = SortUtils.getMaxValue(sortingData);
         //get max,check all numbers must be bigger or equal 0
         int[] count = new int[maxValue + 1];
         //count every number
@@ -58,18 +58,5 @@ public class CountingSort implements Sort {
             count[value] = count[value] - 1;
         }
         return result;
-    }
-
-    private int getMaxValue(int[] sortingData) {
-        int max = sortingData[0];
-        for (int value : sortingData) {
-            if (value < 0) {
-                throw new IllegalArgumentException("value could not be negative:" + value);
-            }
-            if (value > max) {
-                max = value;
-            }
-        }
-        return max;
     }
 }
