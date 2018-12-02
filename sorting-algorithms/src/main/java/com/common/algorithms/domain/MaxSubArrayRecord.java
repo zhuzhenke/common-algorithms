@@ -1,4 +1,4 @@
-package com.common.algorithms.array;
+package com.common.algorithms.domain;
 
 import lombok.Data;
 

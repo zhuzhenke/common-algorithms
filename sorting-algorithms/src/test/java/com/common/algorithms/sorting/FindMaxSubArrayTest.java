@@ -1,7 +1,7 @@
 package com.common.algorithms.sorting;
 
 import com.common.algorithms.array.FindMaxSubArray;
-import com.common.algorithms.array.MaxSubArrayRecord;
+import com.common.algorithms.domain.MaxSubArrayRecord;
 import org.junit.Test;
 
 /**

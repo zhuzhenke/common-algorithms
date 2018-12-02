@@ -1,6 +1,7 @@
 package com.common.algorithms.array;
 
 import com.common.algorithms.basic.SortUtils;
+import com.common.algorithms.domain.MaxSubArrayRecord;
 
 /**
  * @author zhuzhenke

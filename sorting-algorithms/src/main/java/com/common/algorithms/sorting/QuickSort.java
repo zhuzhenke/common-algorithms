@@ -35,7 +35,7 @@ public class QuickSort implements Sort {
     /**
      * one side
      */
-    private int getQuickSortMiddle(int[] sortingData, int start, int end) {
+    public int getQuickSortMiddle(int[] sortingData, int start, int end) {
         int i = start;
         int pivot = end;
         for (int j = start; j < end; j++) {
