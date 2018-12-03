@@ -6,7 +6,7 @@ import com.common.algorithms.basic.SortUtils;
 /**
  * documentation:https://en.wikipedia.org/wiki/Selection_sort
  * gif link:https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif
- * worst-case performance:О(n2)
+ * worst-case performance:O(n^2)
  *
  * @author zhuzhenke
  * @date 2018/11/24

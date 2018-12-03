@@ -6,7 +6,7 @@ import com.common.algorithms.basic.SortUtils;
 /**
  * documentation:https://en.wikipedia.org/wiki/Bubble_sort
  * gif link:https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif
- * worst-case performance:О(n2)
+ * worst-case performance:O(n^2)
  *
  * @author zhuzhenke
  * @date 2018/11/24

@@ -4,6 +4,10 @@ import com.common.algorithms.basic.Sort;
 import com.common.algorithms.basic.SortUtils;
 
 /**
+ * documentation:https://en.wikipedia.org/wiki/Bucket_sort
+ * link1:https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bucket_sort_1.svg/311px-Bucket_sort_1.svg.png
+ * link2:https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bucket_sort_2.svg/311px-Bucket_sort_2.svg.png
+ *  worst-case performance:O(n^2)
  * @author zhuzhenke
  * @date 2018/12/2
  */

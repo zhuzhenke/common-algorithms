@@ -6,7 +6,7 @@ import com.common.algorithms.basic.SortUtils;
 /**
  * documentation:https://en.wikipedia.org/wiki/Heapsort
  * gif link:https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif
- * worst-case performance:O(nlog n)
+ * worst-case performance:O(nlogn)
  *
  * @author zhuzhenke
  * @date 2018/12/2
@@ -30,7 +30,6 @@ public class HeapSort implements Sort {
             SortUtils.swap(sortingData, sortIndex, (sortIndex - 1) / 2);
             sortIndex = (sortIndex - 1) / 2;
         }
-
     }
 
 }

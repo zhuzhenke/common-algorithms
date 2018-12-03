@@ -5,8 +5,8 @@ import com.common.algorithms.basic.SortUtils;
 
 /**
  * documentation:https://en.wikipedia.org/wiki/Quicksort
- * gif link:https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Quicksort-diagram.svg/400px-Quicksort-diagram.svg.png
- * worst-case performance:O(n2)
+ * gif link:https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif
+ * worst-case performance:O(n^2)
  *
  * @author zhuzhenke
  * @date 2018/11/24

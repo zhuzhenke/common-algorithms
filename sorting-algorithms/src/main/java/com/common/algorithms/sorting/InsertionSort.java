@@ -6,7 +6,7 @@ import com.common.algorithms.basic.SortUtils;
 /**
  * documentation:https://en.wikipedia.org/wiki/Insertion_sort
  * gif demo:https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif
- * worst-case performance:О(n2)
+ * worst-case performance:O(n^2)
  *
  * @author zhuzhenke
  * @date 2018/11/24

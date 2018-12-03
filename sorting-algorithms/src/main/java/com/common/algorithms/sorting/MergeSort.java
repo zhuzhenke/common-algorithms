@@ -8,7 +8,7 @@ import java.util.Arrays;
 /**
  * documentation:https://en.wikipedia.org/wiki/Merge_sort
  * gif link:https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif
- * worst-case performance:O(n log n)
+ * worst-case performance:O(nlogn)
  *
  * @author zhuzhenke
  * @date 2018/11/24
