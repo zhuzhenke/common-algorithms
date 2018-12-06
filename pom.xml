@@ -60,5 +60,6 @@
     </build>
     <modules>
         <module>sorting-algorithms</module>
+        <module>algorithms-in-source-code</module>
     </modules>
 </project>
