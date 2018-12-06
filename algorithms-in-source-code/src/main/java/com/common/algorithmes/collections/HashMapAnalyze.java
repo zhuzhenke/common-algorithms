@@ -8,7 +8,8 @@ import java.util.HashMap;
  */
 public class HashMapAnalyze {
     public static void main(String[] args) {
-        initTableSize();
+//        initTableSize();
+        getMod();
     }
 
     /**
@@ -65,5 +66,25 @@ public class HashMapAnalyze {
         n |= n >>> 16;
         //return 16
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
+    }
+
+    private static void getMod() {
+        long times = Integer.MAX_VALUE;
+        int n = (int) Math.pow(2d, 6d);
+        int index = 0;
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < times; i++) {
+            index = i & (n - 1);
+        }
+        long end1 = System.currentTimeMillis();
+        for (int i = 0; i < times; i++) {
+            index = i % n;
+        }
+        long end2 = System.currentTimeMillis();
+
+        System.out.println("& cost : " + (end1 - start));
+        System.out.println("% cost : " + (end2 - end1));
+        //& cost : 1611
+        //% cost : 5933
     }
 }
