@@ -61,5 +61,6 @@
     <modules>
         <module>sorting-algorithms</module>
         <module>algorithms-in-source-code</module>
+        <module>common-data-structure</module>
     </modules>
 </project>
